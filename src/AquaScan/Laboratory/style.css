@@ -1,0 +1,107 @@
+.button {
+    -fx-background-color: #1976D2;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 8px 16px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 10, 0, 0, 4);
+    -fx-font-family: "Arial", sans-serif;
+    /* Button hover animation */
+    -fx-transition: background-color 0.3s, -fx-translate-y 0.2s;
+}
+
+.button:hover {
+    -fx-background-color: #0D47A1;
+    -fx-translate-y: -2px;
+}
+
+.button:pressed {
+    -fx-background-color: #1E88E5;
+    /* Button pressed animation */
+    -fx-translate-y: 2px;
+}
+
+.root {
+
+    -fx-background-repeat: repeat;
+    -fx-background-size: cover;
+    /* Root background animation */
+    -fx-transition: -fx-background-image 2s;
+}
+
+.text-field {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-text-fill: #000000;
+    -fx-font-size: 14px;
+    -fx-prompt-text-fill: #A9A9A9;
+    -fx-padding: 8px;
+    /* Text field focus animation */
+    -fx-effect: dropshadow(gaussian, rgba(25, 118, 210, 0.4), 5, 0, 0, 1);
+    -fx-transition: background-color 0.3s, -fx-border-color 0.3s, -fx-scale-x 0.2s, -fx-scale-y 0.2s;
+}
+
+.text-field:focused {
+    -fx-border-color: #1976D2;
+    -fx-background-color: #F5F5F5;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.text {
+    -fx-text-fill: #000000;
+    -fx-font-size: 14px;
+    -fx-font-family: "Arial", sans-serif;
+    /* Additional text styles */
+}
+
+.choice-box .arrow-button {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 5px;
+    -fx-border-color: #2196F3;
+    -fx-border-radius: 5px;
+    /* Arrow button hover animation */
+    -fx-transition: background-color 0.3s, -fx-translate-y 0.2s;
+}
+
+.choice-box .arrow {
+    -fx-background-color: #2196F3;
+}
+
+.choice-box .arrow:hover {
+    -fx-background-color: #1976D2;
+    -fx-translate-y: -2px;
+}
+
+.choice-box .arrow:pressed {
+    -fx-background-color: #0D47A1;
+    /* Arrow pressed animation */
+    -fx-translate-y: 2px;
+}
+
+.choice-box .box {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 5px;
+    -fx-border-color: #2196F3;
+    -fx-border-radius: 5px;
+    -fx-text-fill: #000000;
+    -fx-font-size: 14px;
+    -fx-padding: 8px;
+    /* Choice box hover animation */
+    -fx-effect: dropshadow(gaussian, rgba(25, 118, 210, 0.4), 5, 0, 0, 1);
+    -fx-transition: background-color 0.3s, -fx-border-color 0.3s, -fx-scale-x 0.2s, -fx-scale-y 0.2s;
+}
+
+.choice-box .box:hover {
+    -fx-background-color: #F5F5F5;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.table-cell {
+    -fx-alignment: CENTER;
+}

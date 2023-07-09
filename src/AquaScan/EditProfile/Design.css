@@ -1,0 +1,33 @@
+.button {
+    -fx-background-color: #1976D2;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 8px 16px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 10, 0, 0, 4);
+    -fx-font-family: "Arial", sans-serif;
+    /* Button hover animation */
+    -fx-transition: background-color 0.3s, -fx-translate-y 0.2s;
+}
+
+.button:hover {
+    -fx-background-color: #0D47A1;
+    -fx-translate-y: -2px;
+}
+
+.button:pressed {
+    -fx-background-color: #1E88E5;
+    /* Button pressed animation */
+    -fx-translate-y: 2px;
+}
+
+.root {
+    -fx-background-image: url("background.jpg");
+    -fx-background-repeat: repeat;
+    -fx-background-size: cover;
+    /* Root background animation */
+    -fx-transition: -fx-background-image 2s;
+}

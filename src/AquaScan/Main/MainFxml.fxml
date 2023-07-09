@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="scenePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1100.0" style="-fx-background-color: #ffffff;" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AquaScan.Main.MainController">
+   <children>
+      <BorderPane fx:id="myBorderPane" layoutX="-1.0" layoutY="-1.0" prefHeight="720.0" prefWidth="1100.0" style="-fx-background-color: #ffffff;">
+         <left>
+            <VBox prefHeight="683.0" prefWidth="210.0" style="-fx-background-color: #0092a9; -fx-background-radius: 120 120 0 0;" styleClass="vbox-buttons" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="userPhoto" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-radius: 60;">
+                     <VBox.margin>
+                        <Insets left="30.0" top="10.0" />
+                     </VBox.margin>
+                     <image>
+                        <Image url="@../../../../../../Downloads/403019_avatar_male_man_person_user_icon.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="userName" alignment="CENTER" prefHeight="18.0" prefWidth="226.0" text="User name" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="userEmail" alignment="CENTER" layoutX="10.0" layoutY="144.0" prefHeight="18.0" prefWidth="226.0" text="Eamil" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="t0" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#logoutAction" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Media/3688492_exit_export_logout_out_icon.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="60.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label fx:id="mm" onMouseClicked="#logoutAction" text="Logout" textFill="RED">
+                     <VBox.margin>
+                        <Insets left="100.0" top="-25.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Separator prefWidth="200.0">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Separator>
+                  <Button mnemonicParsing="false" onAction="#goHomePage" prefHeight="34.0" prefWidth="218.0" styleClass="my-button-blue1" stylesheets="@styles.css" text="Home">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#goLab" prefHeight="70.0" prefWidth="210.0" styleClass="my-button-blue1" stylesheets="@styles.css" text="Laboratory" />
+                  <Button layoutX="10.0" layoutY="285.0" mnemonicParsing="false" onAction="#goPieChart" prefHeight="70.0" prefWidth="210.0" text="River Conditions" />
+                  <Button layoutX="10.0" layoutY="325.0" mnemonicParsing="false" onAction="#goBarChart" prefHeight="70.0" prefWidth="210.0" text="Water Parameters">
+                     <font>
+                        <Font size="10.0" />
+                     </font></Button>
+                  <Button layoutX="10.0" layoutY="365.0" mnemonicParsing="false" onAction="#goReports" prefHeight="70.0" prefWidth="210.0" text="Pollution Management" />
+                  <Button layoutX="10.0" layoutY="405.0" mnemonicParsing="false" onAction="#goDisplay" prefHeight="70.0" prefWidth="210.0" text="Pollution Distribution" />
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <AnchorPane fx:id="centerScenePane" prefHeight="645.0" prefWidth="890.0" style="-fx-background-color: #ffffff; -fx-background-radius: 60;" BorderPane.alignment="CENTER" />
+         </center>
+         <top>
+            <AnchorPane prefHeight="57.0" prefWidth="1102.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane layoutX="212.0" layoutY="2.0" prefHeight="64.0" prefWidth="890.0" style="-fx-background-color: #0092a9; -fx-background-radius: 0 0 0 80;">
+                     <children>
+                        <Label fx:id="titleLabel" alignment="CENTER" layoutX="41.0" layoutY="9.0" prefHeight="18.0" prefWidth="848.0" text="Label" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="34.0" />
+                           </font>
+                        </Label>
+                     </children></AnchorPane>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="71.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+               </children></AnchorPane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

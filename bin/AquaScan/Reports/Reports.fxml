@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="645.0" prefWidth="890.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AquaScan.Reports.ReportsController">
+   <children>
+      <TableView fx:id="tvPollution" layoutY="230.0" prefHeight="411.0" prefWidth="890.0" stylesheets="@style.css">
+        <columns>
+          <TableColumn fx:id="tcIncidentID" prefWidth="67.20001077651978" text="Incident ID" />
+          <TableColumn fx:id="tcRiverName" prefWidth="98.39997100830078" text="River Name" />
+            <TableColumn fx:id="tcDate" prefWidth="107.20001220703125" text="Date and Time" />
+            <TableColumn fx:id="tcPollutionSource" prefWidth="140.79998779296875" text="Pollution Source" />
+            <TableColumn fx:id="tcImpact" prefWidth="122.39999389648438" text="Impact" />
+            <TableColumn fx:id="tcStatus" prefWidth="84.0" text="Status" />
+            <TableColumn fx:id="tcActionTaken" prefWidth="128.0" text="Action Taken" />
+            <TableColumn fx:id="tcResponsibleParty" prefWidth="150.4000244140625" text="Responsible Party" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="23.0" prefHeight="20.0" prefWidth="150.0" text="River Name">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="200.0" layoutY="20.0" prefHeight="26.0" prefWidth="150.0" text="Date">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="376.0" layoutY="20.0" prefHeight="26.0" prefWidth="150.0" text="Pollution Source">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="464.0" layoutY="94.0" prefHeight="26.0" prefWidth="375.0" text="Impact">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="16.0" layoutY="95.0" prefHeight="26.0" prefWidth="375.0" text="Action Taken">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="561.0" layoutY="20.0" prefHeight="26.0" prefWidth="150.0" text="Responsible Party">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="739.0" layoutY="20.0" prefHeight="26.0" prefWidth="100.0" text="Status">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <HBox layoutX="-4.0" layoutY="48.0" prefHeight="38.0" prefWidth="898.0">
+         <children>
+            <ChoiceBox fx:id="cbRiverName" prefHeight="44.0" prefWidth="150.0">
+               <HBox.margin>
+                  <Insets left="20.0" right="30.0" />
+               </HBox.margin>
+            </ChoiceBox>
+            <DatePicker fx:id="dpDate" prefHeight="42.0" prefWidth="150.0" promptText="Date">
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </DatePicker>
+            <TextField fx:id="pollutionSourceField" prefHeight="42.0" prefWidth="150.0" promptText="Pollution Source">
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </TextField>
+            <ChoiceBox fx:id="cbResponsibleParty" prefHeight="40.0" prefWidth="150.0">
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </ChoiceBox>
+            <ChoiceBox fx:id="cbStatus" prefHeight="45.0" prefWidth="100.0" />
+         </children>
+      </HBox>
+      <HBox layoutX="-4.0" layoutY="121.0" prefHeight="54.0" prefWidth="898.0">
+         <children>
+            <TextField fx:id="actionTakenField" prefHeight="42.0" prefWidth="375.0">
+               <HBox.margin>
+                  <Insets left="20.0" right="75.0" />
+               </HBox.margin>
+            </TextField>
+            <TextField fx:id="impactField" layoutX="10.0" layoutY="10.0" prefHeight="42.0" prefWidth="375.0">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin></TextField>
+         </children>
+      </HBox>
+      <TextField fx:id="tfFilter" alignment="CENTER" layoutX="564.0" layoutY="184.0" prefHeight="36.0" prefWidth="283.0" promptText="Filter Status  or Pollution Source" />
+      <HBox layoutX="4.0" layoutY="183.0" prefHeight="38.0" prefWidth="555.0">
+         <children>
+            <Button fx:id="saveButton" mnemonicParsing="false" onAction="#save" prefWidth="100.0" text="Save">
+               <padding>
+                  <Insets left="20.0" right="20.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#editButtonAction" prefWidth="100.0" text="Edit">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#updateButtonAction" prefWidth="100.0" text="Update">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#removeButtonAction" prefWidth="100.0" text="Delete">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button layoutX="352.0" layoutY="10.0" mnemonicParsing="false" onAction="#ClearButtonAction" prefWidth="100.0" text="Clear" />
+         </children>
+      </HBox>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="571.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Media/find.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

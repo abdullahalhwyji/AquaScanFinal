@@ -1,0 +1,58 @@
+.chart-title {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.pie-chart-label {
+    -fx-font-size: 11px;
+    -fx-fill: white;
+}
+
+.chart-legend {
+    -fx-font-size: 12px;
+    -fx-padding: 10px;
+}
+
+.chart-legend-item-symbol {
+    -fx-background-radius: 50%;
+}
+
+.chart-legend-item-text {
+    -fx-fill: #333333;
+}
+
+.chart-pie-label-line {
+    -fx-stroke: #333333;
+    -fx-stroke-width: 1px;
+    -fx-translate-y: 3px;
+    /* Adjust the vertical position of the line */
+}
+
+
+
+.chart-pie-label {
+    -fx-font-size: 11px;
+    -fx-fill: #333333;
+    -fx-stroke-width: 0.5px;
+    -fx-transition-duration: 0.3s;
+    /* Set the duration of the animation */
+}
+
+.chart-pie-label:hover {
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-opacity: 0.8;
+    /* Set the initial opacity for the hover effect */
+}
+
+.chart-pie-label:hover .label-animation {
+    -fx-opacity: 1;
+    /* Change the opacity to 1 during the hover animation */
+}
+
+/* Add hover effect */
+.chart-pie:hover {
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 0);
+}

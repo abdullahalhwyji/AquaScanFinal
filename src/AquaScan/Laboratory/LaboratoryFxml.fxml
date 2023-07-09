@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="645.0" prefWidth="890.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AquaScan.Laboratory.LaboratoryController">
+   <children>
+      <TableView fx:id="tvRiver" blendMode="HARD_LIGHT" layoutY="47.0" prefHeight="399.0" prefWidth="890.0" style="-fx-background-color: #ffffff;" stylesheets="@style.css">
+        <columns>
+          <TableColumn fx:id="tcRiverName" prefWidth="90.0" style="-fx-alignment: center;" text="River Name" />
+          
+            <TableColumn fx:id="tcDate" minWidth="0.0" prefWidth="90.0" style="-fx-alignment: center;" text="Date" />
+          <TableColumn fx:id="tcRiverSide" prefWidth="90.0" style="-fx-alignment: center;" text="River Side" />
+            <TableColumn fx:id="tcParameters" prefWidth="616.7999938964844" text="Parametars">
+               <columns>
+                  <TableColumn fx:id="tcPH" prefWidth="103.0" style="-fx-alignment: center;" text="PH" />
+                  <TableColumn fx:id="tcTemperature" prefWidth="103.0" style="-fx-alignment: center;" text="Temperature" />
+                  <TableColumn fx:id="tcDissolvedOxygen" prefWidth="103.0" style="-fx-alignment: center;" text="Dissolved Oxygen (mg/L)" />
+                  <TableColumn fx:id="tcTurbidity" prefWidth="103.0" style="-fx-alignment: center;" text="Turbidity (NTU) " />
+                  <TableColumn fx:id="tcConductivity" prefWidth="103.0" style="-fx-alignment: center;" text="Conductivity (μS/cm)" />
+                  <TableColumn fx:id="tcTotalDissolvedSolids" prefWidth="103.0" style="-fx-alignment: center;" text="Total Dissolved Solids ( mg/L)" />
+               </columns>
+            </TableColumn>
+        </columns>
+      </TableView>
+      <TextField fx:id="tfFilter" layoutX="10.0" layoutY="5.0" prefHeight="26.0" prefWidth="449.0" promptText="Search for River name or Report Data" stylesheets="@style.css" />
+      <ImageView fitHeight="32.0" fitWidth="34.0" layoutX="423.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Media/find.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="deleteLabel" layoutX="321.0" layoutY="430.0" />
+      <HBox layoutY="602.0" prefHeight="32.0" prefWidth="890.0">
+         <children>
+            <TextField fx:id="temperatureField" prefHeight="26.0" prefWidth="150.0" style="-fx-background-radius: 40;" stylesheets="@style.css">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets left="30.0" right="20.0" />
+               </HBox.margin>
+            </TextField>
+            <TextField fx:id="dissolvedOxygenField" prefHeight="26.0" prefWidth="150.0" style="-fx-background-radius: 40;" stylesheets="@style.css">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </TextField>
+            <TextField fx:id="turbidityField" prefHeight="26.0" prefWidth="150.0" style="-fx-background-radius: 40;" stylesheets="@style.css">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </TextField>
+            <TextField fx:id="conductivityField" prefHeight="26.0" prefWidth="150.0" style="-fx-background-radius: 40;" stylesheets="@style.css">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </TextField>
+            <TextField fx:id="totalDissolvedSolidsField" prefHeight="26.0" prefWidth="150.0" style="-fx-background-radius: 40;" stylesheets="@style.css">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox layoutY="581.0" prefHeight="16.0" prefWidth="890.0">
+         <children>
+            <Text stroke="WHITE" strokeType="OUTSIDE" strokeWidth="2.0" text="Temperature (°C)">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="55.0" right="60.0" />
+               </HBox.margin>
+            </Text>
+            <Text stroke="WHITE" strokeType="OUTSIDE" strokeWidth="2.0" text="Dissolved Oxygen (mg/L)">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="60.0" />
+               </HBox.margin>
+            </Text>
+            <Text stroke="WHITE" strokeType="OUTSIDE" strokeWidth="2.0" text="Turbidity (NTU) ">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="-15.0" right="60.0" />
+               </HBox.margin>
+            </Text>
+            <Text stroke="WHITE" strokeType="OUTSIDE" strokeWidth="2.0" text="Conductivity (μS/cm)">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </Text>
+            <Text stroke="WHITE" strokeType="OUTSIDE" strokeWidth="2.0" text="Total Dissolved Solids ( mg/L)">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+      <HBox layoutX="-5.0" layoutY="462.0" prefHeight="36.0" prefWidth="899.0">
+         <children>
+            <Button fx:id="saveButton" mnemonicParsing="false" onAction="#save" prefHeight="35.0" prefWidth="150.0" stylesheets="@style.css" text="Save">
+               <padding>
+                  <Insets left="27.0" right="27.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets left="30.0" right="20.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#delete" prefHeight="35.0" prefWidth="150.0" stylesheets="@style.css" text="Delete">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#editButtonAction" prefHeight="35.0" prefWidth="150.0" stylesheets="@style.css" text="Edit">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#refreshButtonAction" prefHeight="35.0" prefWidth="150.0" stylesheets="@style.css" text="Refresh">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#clearButtonAction" prefHeight="35.0" prefWidth="150.0" stylesheets="@style.css" text="Clear" />
+         </children>
+      </HBox>
+      <HBox layoutX="2.0" layoutY="528.0" prefHeight="35.0" prefWidth="890.0">
+         <children>
+            <TextField fx:id="riverNameField" prefHeight="26.0" prefWidth="226.0" style="-fx-background-radius: 40;" stylesheets="@style.css">
+               <padding>
+                  <Insets left="100.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets left="31.0" right="20.0" />
+               </HBox.margin>
+            </TextField>
+            <DatePicker fx:id="reportDateField" prefHeight="26.0" prefWidth="226.0" style="-fx-background-radius: 0;" stylesheets="@style.css">
+               <HBox.margin>
+                  <Insets right="40.0" />
+               </HBox.margin>
+            </DatePicker>
+            <ChoiceBox fx:id="riverSideChoiceBox" prefHeight="36.0" prefWidth="170.0" style="-fx-background-radius: 40;" stylesheets="@style.css">
+               <HBox.margin>
+                  <Insets right="40.0" />
+               </HBox.margin>
+            </ChoiceBox>
+            <Spinner fx:id="phSpinner" prefHeight="26.0" prefWidth="68.0" style="-fx-background-radius: 40;" stylesheets="@style.css" />
+         </children>
+      </HBox>
+      <HBox layoutY="509.0" prefHeight="16.0" prefWidth="890.0">
+         <children>
+            <Text stroke="WHITE" strokeType="OUTSIDE" strokeWidth="2.0" text="River Name">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="115.0" right="165.0" />
+               </HBox.margin>
+            </Text>
+            <Text stroke="WHITE" strokeType="OUTSIDE" strokeWidth="2.0" text="Report Date">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="15.0" right="115.0" />
+               </HBox.margin>
+            </Text>
+            <Text stroke="WHITE" strokeType="OUTSIDE" strokeWidth="2.0" text="River Side">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="50.0" right="120.0" />
+               </HBox.margin>
+            </Text>
+            <Text stroke="WHITE" strokeType="OUTSIDE" strokeWidth="2.0" text="PH" wrappingWidth="22.399999999999864">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

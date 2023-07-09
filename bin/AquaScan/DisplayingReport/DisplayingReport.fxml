@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="645.0" prefWidth="890.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AquaScan.DisplayingReport.DisplaingReportController">
+   <children>
+      <TabPane prefHeight="645.0" prefWidth="893.0" style="-fx-background-radius: 50 0 0 0;" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="&quot;Water Pollution: Responsible Parties and Frequency&quot;">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="215.0" prefWidth="254.0">
+                     <children>
+                        <BarChart fx:id="myBarChart" alternativeColumnFillVisible="true" focusTraversable="true" layoutX="-2.0" layoutY="-2.0" legendVisible="false" prefHeight="622.0" prefWidth="708.0" title="&quot;Water Pollution: Responsible Parties and Frequency&quot;" verticalGridLinesVisible="false" verticalZeroLineVisible="false">
+                           <xAxis>
+                              <CategoryAxis side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis label="Frequency" side="LEFT" />
+                           </yAxis>
+                        </BarChart>
+                        <ListView fx:id="responsiblePartyList" layoutX="699.0" layoutY="39.0" prefHeight="578.0" prefWidth="191.0" />
+                        <Label alignment="CENTER" layoutX="705.0" layoutY="17.0" prefHeight="18.0" prefWidth="185.0" text="Responsible Parties">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Status Classification of Investigated Rivers">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <PieChart fx:id="myPieChart" layoutX="-1.0" legendVisible="false" prefHeight="617.0" prefWidth="890.0" stylesheets="@style.css" title="Status Classification of Investigated Rivers" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

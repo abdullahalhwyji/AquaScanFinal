@@ -1,0 +1,316 @@
+<AquaScan.Reports.PollutionList>
+  <dataList class="com.sun.javafx.collections.ObservableListWrapper">
+    <listenerHelper class="com.sun.javafx.collections.ListListenerHelper$SingleChange">
+      <listener class="javafx.collections.WeakListChangeListener">
+        <ref>
+          <referent class="null"/>
+          <queue class="java.lang.ref.ReferenceQueue$Null">
+            <lock/>
+            <queueLength>0</queueLength>
+          </queue>
+        </ref>
+      </listener>
+    </listenerHelper>
+    <changeBuilder>
+      <list class="com.sun.javafx.collections.ObservableListWrapper" reference="../.."/>
+      <changeLock>0</changeLock>
+      <addRemoveChanges/>
+    </changeBuilder>
+    <backingList>
+      <AquaScan.Reports.Pollution>
+        <incidentID>
+          <value>1</value>
+          <valid>true</valid>
+          <name></name>
+        </incidentID>
+        <riverName>
+          <value>River A</value>
+          <valid>true</valid>
+          <name></name>
+        </riverName>
+        <date>
+          <value>2023-07-05</value>
+          <valid>true</valid>
+          <name></name>
+        </date>
+        <pollutionSource>
+          <value>Sewage overflow from a wastewater treatment plant</value>
+          <valid>true</valid>
+          <name></name>
+        </pollutionSource>
+        <responsibleParty>
+          <value>ABC Manufacturing Co.</value>
+          <valid>true</valid>
+          <name></name>
+        </responsibleParty>
+        <status>
+          <value>Under Investigation</value>
+          <valid>true</valid>
+          <name></name>
+        </status>
+        <actionTaken>
+          <value>Diversion of overflow, repair of the treatment plant, and disinfection of affected areas.</value>
+          <valid>true</valid>
+          <name></name>
+        </actionTaken>
+        <impact>
+          <value> Bacterial contamination, beach closures, and potential health risks.</value>
+          <valid>true</valid>
+          <name></name>
+        </impact>
+      </AquaScan.Reports.Pollution>
+      <AquaScan.Reports.Pollution>
+        <incidentID>
+          <value>2</value>
+          <valid>true</valid>
+          <name></name>
+        </incidentID>
+        <riverName>
+          <value>River O</value>
+          <valid>true</valid>
+          <name></name>
+        </riverName>
+        <date>
+          <value>2023-07-11</value>
+          <valid>true</valid>
+          <name></name>
+        </date>
+        <pollutionSource>
+          <value>Illegal gold mining activities</value>
+          <valid>true</valid>
+          <name></name>
+        </pollutionSource>
+        <responsibleParty>
+          <value>Environmental Protection Agency (EPA)</value>
+          <valid>true</valid>
+          <name></name>
+        </responsibleParty>
+        <status>
+          <value>Resolved</value>
+          <valid>true</valid>
+          <name></name>
+        </status>
+        <actionTaken>
+          <value>Increased surveillance, awareness campaigns, and support for sustainable </value>
+          <valid>true</valid>
+          <name></name>
+        </actionTaken>
+        <impact>
+          <value>Deforestation, mercury contamination, and threat to indigenous communities.</value>
+          <valid>true</valid>
+          <name></name>
+        </impact>
+      </AquaScan.Reports.Pollution>
+      <AquaScan.Reports.Pollution>
+        <incidentID>
+          <value>3</value>
+          <valid>true</valid>
+          <name></name>
+        </incidentID>
+        <riverName>
+          <value>River Q</value>
+          <valid>true</valid>
+          <name></name>
+        </riverName>
+        <date>
+          <value>2023-06-29</value>
+          <valid>true</valid>
+          <name></name>
+        </date>
+        <pollutionSource>
+          <value>Oil spill from a cargo ship collision</value>
+          <valid>true</valid>
+          <name></name>
+        </pollutionSource>
+        <responsibleParty>
+          <value>ABC Manufacturing Co.</value>
+          <valid>true</valid>
+          <name></name>
+        </responsibleParty>
+        <status>
+          <value>In Remediation</value>
+          <valid>true</valid>
+          <name></name>
+        </status>
+        <actionTaken>
+          <value>Emergency response, oil recovery, and investigation launched to determine liability.</value>
+          <valid>true</valid>
+          <name></name>
+        </actionTaken>
+        <impact>
+          <value>Wildlife mortality, disruption of river traffic, and contamination of riverbanks.</value>
+          <valid>true</valid>
+          <name></name>
+        </impact>
+      </AquaScan.Reports.Pollution>
+      <AquaScan.Reports.Pollution>
+        <incidentID>
+          <value>4</value>
+          <valid>true</valid>
+          <name></name>
+        </incidentID>
+        <riverName>
+          <value>River B</value>
+          <valid>true</valid>
+          <name></name>
+        </riverName>
+        <date>
+          <value>2023-07-12</value>
+          <valid>true</valid>
+          <name></name>
+        </date>
+        <pollutionSource>
+          <value>Industrial wastewater discharge</value>
+          <valid>true</valid>
+          <name></name>
+        </pollutionSource>
+        <responsibleParty>
+          <value>ABC Manufacturing Co.</value>
+          <valid>true</valid>
+          <name></name>
+        </responsibleParty>
+        <status>
+          <value>In Remediation</value>
+          <valid>true</valid>
+          <name></name>
+        </status>
+        <actionTaken>
+          <value> Fines imposed, installation of additional treatment facilities, and stricter enforcement.</value>
+          <valid>true</valid>
+          <name></name>
+        </actionTaken>
+        <impact>
+          <value>Toxic chemicals, reduced biodiversity, and compromised drinking water quality.</value>
+          <valid>true</valid>
+          <name></name>
+        </impact>
+      </AquaScan.Reports.Pollution>
+      <AquaScan.Reports.Pollution>
+        <incidentID>
+          <value>5</value>
+          <valid>true</valid>
+          <name></name>
+        </incidentID>
+        <riverName>
+          <value>River I</value>
+          <valid>true</valid>
+          <name></name>
+        </riverName>
+        <date>
+          <value>2023-07-12</value>
+          <valid>true</valid>
+          <name></name>
+        </date>
+        <pollutionSource>
+          <value>Industrial discharge of heavy metals</value>
+          <valid>true</valid>
+          <name></name>
+        </pollutionSource>
+        <responsibleParty>
+          <value>Environmental Protection Agency (EPA)</value>
+          <valid>true</valid>
+          <name></name>
+        </responsibleParty>
+        <status>
+          <value>Resolved</value>
+          <valid>true</valid>
+          <name></name>
+        </status>
+        <actionTaken>
+          <value>Fine imposed, upgraded wastewater treatment system, and enforced pollution control measures.</value>
+          <valid>true</valid>
+          <name></name>
+        </actionTaken>
+        <impact>
+          <value>Contaminated fish, reduced biodiversity, and compromised water quality.</value>
+          <valid>true</valid>
+          <name></name>
+        </impact>
+      </AquaScan.Reports.Pollution>
+      <AquaScan.Reports.Pollution>
+        <incidentID>
+          <value>6</value>
+          <valid>true</valid>
+          <name></name>
+        </incidentID>
+        <riverName>
+          <value>River H</value>
+          <valid>true</valid>
+          <name></name>
+        </riverName>
+        <date>
+          <value>2023-07-13</value>
+          <valid>true</valid>
+          <name></name>
+        </date>
+        <pollutionSource>
+          <value>Chemical spill from a storage facility</value>
+          <valid>true</valid>
+          <name></name>
+        </pollutionSource>
+        <responsibleParty>
+          <value>Municipal Water and Sewage Authority</value>
+          <valid>true</valid>
+          <name></name>
+        </responsibleParty>
+        <status>
+          <value>Under Investigation</value>
+          <valid>true</valid>
+          <name></name>
+        </status>
+        <actionTaken>
+          <value>Emergency response, containment measures, and soil and water remediation.</value>
+          <valid>true</valid>
+          <name></name>
+        </actionTaken>
+        <impact>
+          <value>Fish mortality, temporary restriction on river activities, and contamination of surrounding soil.</value>
+          <valid>true</valid>
+          <name></name>
+        </impact>
+      </AquaScan.Reports.Pollution>
+      <AquaScan.Reports.Pollution>
+        <incidentID>
+          <value>7</value>
+          <valid>true</valid>
+          <name></name>
+        </incidentID>
+        <riverName>
+          <value>River P</value>
+          <valid>true</valid>
+          <name></name>
+        </riverName>
+        <date>
+          <value>2023-07-13</value>
+          <valid>true</valid>
+          <name></name>
+        </date>
+        <pollutionSource>
+          <value>Agricultural runoff containing pesticides and fertilizers</value>
+          <valid>true</valid>
+          <name></name>
+        </pollutionSource>
+        <responsibleParty>
+          <value>Department of Natural Resources (DNR)</value>
+          <valid>true</valid>
+          <name></name>
+        </responsibleParty>
+        <status>
+          <value>Closed</value>
+          <valid>true</valid>
+          <name></name>
+        </status>
+        <actionTaken>
+          <value>Farmer education programs, implementation of best management practices, and creation of buffer zones.</value>
+          <valid>true</valid>
+          <name></name>
+        </actionTaken>
+        <impact>
+          <value>Algal blooms, impaired water quality, and negative effects on aquatic organisms.</value>
+          <valid>true</valid>
+          <name></name>
+        </impact>
+      </AquaScan.Reports.Pollution>
+    </backingList>
+  </dataList>
+</AquaScan.Reports.PollutionList>

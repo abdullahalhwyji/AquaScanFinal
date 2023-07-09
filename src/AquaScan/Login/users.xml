@@ -1,0 +1,16 @@
+<users>
+    <user>
+        <name>John Doe</name>
+        <address>123 Main St</address>
+        <email>johndoe@example.com</email>
+        <password>password123</password>
+        <photo>path/to/photo1.jpg</photo>
+    </user>
+    <user>
+        <name>Jane Smith</name>
+        <address>456 Elm St</address>
+        <email>janesmith@example.com</email>
+        <password>qwerty</password>
+        <photo>path/to/photo2.jpg</photo>
+    </user>
+</users>

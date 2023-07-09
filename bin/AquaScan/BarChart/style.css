@@ -1,0 +1,151 @@
+.button {
+    -fx-background-color: #1976D2;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 8px 16px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 10, 0, 0, 4);
+    -fx-font-family: "Arial", sans-serif;
+    /* Button hover animation */
+    -fx-transition: background-color 0.3s, -fx-translate-y 0.2s;
+}
+
+.button:hover {
+    -fx-background-color: #0D47A1;
+    -fx-translate-y: -2px;
+}
+
+.button:pressed {
+    -fx-background-color: #1E88E5;
+    /* Button pressed animation */
+    -fx-translate-y: 2px;
+}
+
+
+.text {
+    -fx-text-fill: #000000;
+    -fx-font-size: 14px;
+    -fx-font-family: "Arial", sans-serif;
+    /* Additional text styles */
+}
+
+.choice-box .arrow-button {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 5px;
+    -fx-border-color: #2196F3;
+    -fx-border-radius: 5px;
+    /* Arrow button hover animation */
+    -fx-transition: background-color 0.3s, -fx-translate-y 0.2s;
+}
+
+.choice-box .arrow {
+    -fx-background-color: #2196F3;
+}
+
+.choice-box .arrow:hover {
+    -fx-background-color: #1976D2;
+    -fx-translate-y: -2px;
+}
+
+.choice-box .arrow:pressed {
+    -fx-background-color: #0D47A1;
+    /* Arrow pressed animation */
+    -fx-translate-y: 2px;
+}
+
+.choice-box .box {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 5px;
+    -fx-border-color: #2196F3;
+    -fx-border-radius: 5px;
+    -fx-text-fill: #000000;
+    -fx-font-size: 14px;
+    -fx-padding: 8px;
+    /* Choice box hover animation */
+    -fx-effect: dropshadow(gaussian, rgba(25, 118, 210, 0.4), 5, 0, 0, 1);
+    -fx-transition: background-color 0.3s, -fx-border-color 0.3s, -fx-scale-x 0.2s, -fx-scale-y 0.2s;
+}
+
+.choice-box .box:hover {
+    -fx-background-color: #F5F5F5;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+/* CSS for BarChart */
+
+.chart-bar {
+    -fx-bar-fill: #1976D2;
+    /* Bar fill color */
+    -fx-bar-gap: 2px;
+    /* Gap between bars */
+}
+
+.chart-bar:hover {
+    -fx-bar-fill: #0D47A1;
+    /* Hover color */
+}
+
+.chart-bar:pressed {
+    -fx-bar-fill: #1E88E5;
+    /* Pressed color */
+}
+
+.chart-plot-background {
+    -fx-background-color: #FFFFFF;
+    /* Background color of the chart plot area */
+}
+
+.chart-horizontal-grid-lines {
+    -fx-stroke: #BDBDBD;
+    /* Color of horizontal grid lines */
+}
+
+.chart-vertical-grid-lines {
+    -fx-stroke: #BDBDBD;
+    /* Color of vertical grid lines */
+}
+
+.chart-vertical-zero-line {
+    -fx-stroke: #BDBDBD;
+    /* Color of vertical zero line */
+}
+
+.chart-title {
+    -fx-font-size: 16px;
+    /* Title font size */
+    -fx-font-weight: bold;
+    /* Title font weight */
+}
+
+.chart-legend {
+    -fx-font-size: 14px;
+    /* Legend font size */
+    -fx-text-fill: #000000;
+    /* Legend text color */
+}
+
+.axis-label {
+    -fx-font-size: 14px;
+    /* Axis label font size */
+    -fx-text-fill: #000000;
+    /* Axis label text color */
+}
+
+.axis-tick-mark {
+    -fx-stroke: #000000;
+    /* Axis tick mark color */
+}
+
+.axis-minor-tick-mark {
+    -fx-stroke: #BDBDBD;
+    /* Axis minor tick mark color */
+}
+
+.axis-major-tick-mark {
+    -fx-stroke: #000000;
+    /* Axis major tick mark color */
+}

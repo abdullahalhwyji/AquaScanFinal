@@ -1,0 +1,108 @@
+/* Layer 1 */
+.layer1 {
+    -fx-background-color: #0092a9;
+}
+
+/* Text color for Layer 1 */
+.layer1 .text-color {
+    -fx-text-fill: #ffffff;
+}
+
+/* Layer 2 */
+.layer2 .text-field {
+    -fx-background-color: #f5f5f5;
+    -fx-text-fill: #0092a9;
+    -fx-border-color: transparent transparent #0092a9 transparent;
+    -fx-border-width: 0 0 1px 0;
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+/* Layer 2 when focused */
+.layer2 .text-field:focused {
+    -fx-border-color: transparent transparent#0092a9 transparent;
+    -fx-border-width: 0 0 2px 0;
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+
+/* Layer 1 */
+.layer1 .button {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #0092a9;
+    -fx-font-size: 12px;
+    /* Adjust font size as desired */
+    -fx-font-weight: bold;
+    /* Make the font bold */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 0, 0, 0, 1);
+    /* Add drop shadow effect */
+    -fx-padding: 6.5px 14px;
+    /* Add padding for better appearance */
+    -fx-transition: all 0.3s ease-in-out;
+    /* Add transition for animation */
+    -fx-background-radius: 20;
+    /* Set the button background radius for a rounded shape */
+}
+
+/* Layer 2 */
+.layer2 .button {
+    -fx-background-color: #0092a9;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 12px;
+    /* Adjust font size as desired */
+    -fx-font-weight: bold;
+    /* Make the font bold */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 0, 0, 0, 1);
+    /* Add drop shadow effect */
+    -fx-padding: 6.5px 14px;
+    /* Add padding for better appearance */
+    -fx-transition: all 0.3s ease-in-out;
+    /* Add transition for animation */
+    -fx-background-radius: 20;
+    /* Set the button background radius for a rounded shape */
+}
+
+
+/* Hover effect */
+.layer2 .button:hover {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #0092a9;
+    -fx-cursor: hand;
+    /* Change cursor on hover */
+}
+
+/* Pressed effect */
+.button:pressed {
+    -fx-background-color: #0092a9;
+    -fx-text-fill: #ffffff;
+    -fx-effect: none;
+    /* Remove drop shadow effect on press */
+    -fx-cursor: hand;
+    /* Change cursor on press */
+}
+
+
+/* Layer 1 */
+.layer1 .text-field,
+.layer1 .check-box,
+.layer1 .password-field {
+    -fx-background-color: #0092a9;
+    -fx-text-fill: #ffffff;
+}
+
+/* Layer 2 */
+.layer2 .text-field,
+.layer2 .check-box,
+.layer2 .password-field {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #0092a9;
+}
+
+/* Layer 1 */
+.layer1 .label {
+    -fx-text-fill: #ffffff;
+}
+
+/* Layer 2 */
+.layer2 .label {
+    -fx-text-fill: #0092a9;
+}

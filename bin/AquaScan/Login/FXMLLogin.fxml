@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" stylesheets="@Design.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AquaScan.Login.FXMLLoginController">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <AnchorPane fx:id="layer2" layoutX="328.0" prefHeight="600.0" prefWidth="571.0" styleClass="layer2" stylesheets="@Design.css">
+               <children>
+                  <Label fx:id="s1" layoutX="191.0" layoutY="130.0" text="Create Your Account" textFill="#0092a9">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="s2" layoutX="74.0" layoutY="159.0" text="Profile Picture" textFill="#0092a9">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="s3" fitHeight="176.0" fitWidth="180.0" layoutX="30.0" layoutY="183.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Media/user.png" />
+                     </image></ImageView>
+                  <Button fx:id="s4" layoutX="55.0" layoutY="366.0" mnemonicParsing="false" onAction="#uploadpic" prefHeight="31.0" prefWidth="126.0" stylesheets="@Design.css" text="Upload Photo" />
+                  <Label fx:id="s5" layoutX="246.0" layoutY="159.0" text="Personal " textFill="#0092a9">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="s6" layoutX="243.0" layoutY="178.0" prefHeight="25.0" prefWidth="246.0" promptText="Name" style="-fx-background-radius: 10;" />
+                  <TextField fx:id="s7" layoutX="243.0" layoutY="210.0" prefHeight="25.0" prefWidth="246.0" promptText="Address" style="-fx-background-radius: 10;" />
+                  <Label fx:id="s8" layoutX="246.0" layoutY="239.0" text="Account Info" textFill="#0092a9">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="s9" layoutX="243.0" layoutY="258.0" prefHeight="25.0" prefWidth="246.0" promptText="Email" style="-fx-background-radius: 10;" />
+                  <PasswordField fx:id="s10" layoutX="243.0" layoutY="292.0" prefHeight="25.0" prefWidth="246.0" promptText="Password" style="-fx-background-radius: 10;" />
+                  <CheckBox fx:id="s11" layoutX="403.0" layoutY="321.0" mnemonicParsing="false" onAction="#handleShowPassword2" text="Show Password" textFill="#0092a9">
+                     <font>
+                        <Font name="System Bold" size="9.0" />
+                     </font>
+                  </CheckBox>
+                  <PasswordField fx:id="s12" layoutX="243.0" layoutY="337.0" prefHeight="25.0" prefWidth="246.0" promptText="Confirm Password" style="-fx-background-radius: 10;">
+                     <rotationAxis>
+                        <Point3D />
+                     </rotationAxis>
+                  </PasswordField>
+                  <CheckBox fx:id="s13" layoutX="403.0" layoutY="368.0" mnemonicParsing="false" onAction="#handleShowPassword3" text="Show Password" textFill="#0092a9">
+                     <font>
+                        <Font name="System Bold" size="9.0" />
+                     </font>
+                  </CheckBox>
+                  <Button fx:id="s16" layoutX="239.0" layoutY="406.0" mnemonicParsing="false" onMouseClicked="#signupAction" prefHeight="30.0" prefWidth="246.0" stylesheets="@Design.css" text="SIGN UP" />
+                  <TextField fx:id="l2" layoutX="159.0" layoutY="243.0" prefHeight="25.0" prefWidth="246.0" promptText="Email" style="-fx-background-radius: 10;" />
+                  <PasswordField fx:id="l3" layoutX="159.0" layoutY="279.0" prefHeight="25.0" prefWidth="246.0" promptText="Password" style="-fx-background-radius: 10;" />
+                  <CheckBox fx:id="l4" layoutX="321.0" layoutY="311.0" mnemonicParsing="false" onAction="#handleShowPassword" text="Show Password" textFill="#0092a9">
+                     <font>
+                        <Font name="System Bold" size="9.0" />
+                     </font>
+                  </CheckBox>
+                  <Button fx:id="l5" layoutX="159.0" layoutY="332.0" mnemonicParsing="false" onMouseClicked="#loginAction" prefHeight="30.0" prefWidth="246.0" stylesheets="@Design.css" text="LOG IN" />
+                  <Label fx:id="l1" layoutX="209.0" layoutY="220.0" text="Log to Your Account" textFill="#0092a9">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="layer1" prefHeight="600.0" prefWidth="331.0" styleClass="layer1" stylesheets="@Design.css">
+               <children>
+                  <ImageView fitHeight="190.0" fitWidth="330.0" layoutX="114.0" layoutY="65.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <image>
+                        <Image url="@../Media/logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="ls1" alignment="CENTER" layoutX="3.0" layoutY="269.0" prefWidth="330.0" styleClass="text-color" stylesheets="@Design.css" text="Hello There!" textFill="#0092a9">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="ls2" layoutX="104.0" layoutY="429.0" styleClass="text-color" stylesheets="@Design.css" text="Already have account?" textFill="#0092a9">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="ls3" layoutX="109.0" layoutY="475.0" mnemonicParsing="false" onMouseClicked="#login" prefHeight="26.0" prefWidth="125.0" styleClass="my-button-blue" text="LOG IN" />
+                  <Label fx:id="ll1" alignment="CENTER" layoutX="3.0" layoutY="269.0" prefWidth="330.0" styleClass="text-color" stylesheets="@Design.css" text="Welcome Back !" textFill="#0092a9">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="ll2" layoutX="109.0" layoutY="429.0" styleClass="text-color" stylesheets="@Design.css" text="Don't have account?" textFill="#0092a9">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="ll3" layoutX="109.0" layoutY="474.0" mnemonicParsing="false" onMouseClicked="#signup" prefHeight="26.0" prefWidth="125.0" stylesheets="@Design.css" text="SIGN UP" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
